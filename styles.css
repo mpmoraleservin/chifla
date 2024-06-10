@@ -57,7 +57,7 @@ h3 {
 /* Background Styles */
 
 .background {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--white)), url('images/fondo.jpeg');
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--white)), url('images/000-fondo.jpeg');
     position: fixed;
     opacity: 0.1;
     background-size: cover;
@@ -481,27 +481,27 @@ section {
 }
 
 .services__service:first-child {
-    background-image: linear-gradient(#0007, #0007), url("images/platform.jpeg");
+    background-image: linear-gradient(#0007, #0007), url("images/11-sala-de-juegos.jpeg");
 }
 
 .services__service:nth-child(2) {
-    background-image: linear-gradient(#0007, #0007),  url("images/casita-3.jpeg");
+    background-image: linear-gradient(#0007, #0007),  url("images/12-maqueta-de-interiores.jpeg");
 }
 
 .services__service:nth-child(3) {
-    background-image: linear-gradient(#0007, #0007),url("images/ambientacion-image.jpeg");
+    background-image: linear-gradient(#0007, #0007),url("images/13-cumpleanos-tema-burbujas.jpeg");
 }
 
 .services__service:nth-child(4) {
-    background-image: linear-gradient(#0007, #0007), url("images/furniture.jpeg");
+    background-image: linear-gradient(#0007, #0007), url("images/14-mobiliario-de-diseno.jpeg");
 }
 
 .services__service:nth-child(5) {
-    background-image: linear-gradient(#0007, #0007), url("images/juguetes.jpeg");
+    background-image: linear-gradient(#0007, #0007), url("images/15-juguetes-de-diseno.jpeg");
 }
 
 .services__service:nth-child(6) {
-    background-image: linear-gradient(#0007, #0007), url("images/accesorios.jpeg");
+    background-image: linear-gradient(#0007, #0007), url("images/16-accesorios-de-diseno.jpeg");
 }
 
 .services__service {
