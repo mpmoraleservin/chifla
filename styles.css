@@ -57,7 +57,7 @@ h3 {
 /* Background Styles */
 
 .background {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--white)), url('images/fondo.jpg');
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--white)), url('images/fondo.jpeg');
     position: fixed;
     opacity: 0.1;
     background-size: cover;
