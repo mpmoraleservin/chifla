@@ -9,6 +9,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    const logo = document.querySelector('.header__logo');
+    const closeNavButton = document.querySelector('.close-nav-button');
+
+    // Cerrar el menú de navegación al hacer clic en el botón de cerrar
+    closeNavButton.addEventListener('click', () => {
+        checkbox.checked = false;
+    });
+
+    // Mostrar u ocultar el logo al hacer clic en el botón del menú
+    checkbox.addEventListener('click', () => {
+        if (checkbox.checked) {
+            logo.style.display = 'block';
+        } else {
+            logo.style.display = 'none';
+        }
+    });
+
+
     /* Services modal display */
     const serviceContainers = document.querySelectorAll('.services__service-container .services__service');
     const modalContainers = document.querySelectorAll('.services__modal-image-container');
@@ -24,12 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    modalContainers.forEach((modal) => {
-        modal.addEventListener('click', (event) => {
-            event.stopPropagation();
-        });
-    });
-    
     document.addEventListener('click', (event) => {
         const clickedElement = event.target;
         if (!clickedElement.closest('.services__modal-image-container') && !clickedElement.closest('.services__service')) {
@@ -42,6 +54,22 @@ document.addEventListener('DOMContentLoaded', function() {
                 }, { once: true });
             });
         }
+    });
+
+    modalContainers.forEach((modal) => {
+        modal.addEventListener('click', (event) => {
+            event.stopPropagation();
+        });
+    
+        const closeButton = modal.querySelector('.close-modal-button');
+        closeButton.addEventListener('click', () => {
+            modal.classList.remove('visible');
+            modal.addEventListener('transitionend', () => {
+                if (!modal.classList.contains('visible')) {
+                    modal.classList.remove('show');
+                }
+            }, { once: true });
+        });
     });
     
 });
