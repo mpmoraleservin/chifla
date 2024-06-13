@@ -1,4 +1,13 @@
+//Darle altura automatica al background
+// window.onload = function() {
+//     var main = document.querySelector('.main').offsetHeight;
+//     var services = document.querySelector('.services-section').offsetHeight;
+//     var backgroundImage = document.querySelector('.background');
+//     backgroundImage.style.height = main + services + 'px';
+// };
+
 document.addEventListener('DOMContentLoaded', function() {
+    
     // Esconder el menú responsive cuando se hace click
     const navLinks = document.querySelectorAll('.header__nav-item a');
     const checkbox = document.querySelector('.header__checkbox');

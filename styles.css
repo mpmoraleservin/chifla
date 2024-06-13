@@ -21,7 +21,8 @@ body {
     min-width: 100dvw;
     font-family: var(--font-family);
     color: var(--text-color);
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    overflow-y: auto; 
 }
 
 div, ul, li, a,h1,h2,h3,h4,p {
@@ -58,18 +59,18 @@ h3 {
 
 .background {
     background-image: linear-gradient(to top, rgba(255, 255, 255, 0), var(--white)), url('images/000-fondo.jpeg');
-    opacity: 0.1;
+    opacity: 0.05;
     background-size:contain;
     background-attachment: fixed; 
     top: 100dvh;
     left: 0;
+    height:400dvh;
     width: 100dvw;
-    height: 520dvh;
     position: absolute;
     z-index: -1000;
 }
 
-@supports (animation: animatedBackground 120s linear infinite) {
+/* @supports (animation: animatedBackground 120s linear infinite) {
     @media (prefers-reduced-motion: no-preference) {
         .background {
             animation: animatedBackground 120s linear infinite; 
@@ -79,7 +80,7 @@ h3 {
             to { background-position: 0 100%; }
         }
     }
-}
+} */
 
 /* Header */
 .header {
@@ -715,27 +716,6 @@ section {
     background-color: var(--aqua-green);
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    .info-section__container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .info-section__image, .info-section__content {
-        max-width: 100%;
-        padding: 1rem;
-    }
-
-    .info-section__title {
-        font-size: 1.5rem;
-    }
-
-    .info-section p {
-        font-size: 0.9rem;
-    }
-}
-
 /* Contact Queries */
 @container form (min-width: 600px) {
     .form__form {
@@ -822,6 +802,8 @@ section {
     background-color: var(--aqua-green); 
     color: var(--white); 
     padding: 20px 20px;
+    position: static;
+    z-index: -1000;
 }
 
 .footer__container {
