@@ -210,7 +210,7 @@
     <section class="contact-section" id="contact">
         <h2 class="section__title">Contacto</h2>
         <div class="form">
-            <form class="form__form" id="contactForm">
+            <form class="form__form" id="contact-form" action="https://formspree.io/f/mleqqwrv" method="POST">
                 <div class="form__input-container" id="name">
                     <label>Nombre
                         <input type="text" placeholder="Juan" name="Nombre" required autocomplete="given-name">
@@ -234,13 +234,14 @@
                 <div class="form__input-container" id="submit">
                     <input type="submit" value="Enviar">
                 </div>
+                <p class="dont-show" id="contact-form-status"></p>
             </form>
         </div>
         <div class="modal" id="thankYouModal">
             <div class="modal-content">
                 <img class="footer-logo" src="images/00-logo.png" alt="Chiflá Logo">
                 <p>Gracias por comunicarte con nosotros. <br><br>Nos pondremos en contacto a la brevedad.</p>
-                <button id="closeModalButton"><span class="material-symbols-outlined">Close</span></button>
+                <button id="closeContactModalButton"><span class="material-symbols-outlined">Close</span></button>
             </div>
         </div>
     </section>    
@@ -256,7 +257,7 @@
             <div class="footer__section footer__contact">
                 <h3>Contacto</h3>
                 <ul>
-                    <li>Email: <a href="mailto:chiflastudio@gmail.com">chiflastudio@gmail.com</a></li>
+                    <li>Email: <a href="mailto:info@chifla.com.ar">info@chifla.com.ar</a></li>
                     <li>Whatsapp: +54 9 2616569897</li>
                     <li>Instagram: <a href="https://www.instagram.com/chifla.studio" target="_blank">/chifla.studio</a></li>
                 </ul>

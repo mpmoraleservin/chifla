@@ -61,7 +61,6 @@ h3 {
     opacity: 0.15;
     background-size: cover;
     background-attachment: fixed; 
-    overflow-y: hidden; 
     top: 100dvh;
     left: 0;
     width: 100dvw;
@@ -285,6 +284,23 @@ h3 {
     justify-content: center;
     padding: 15px;
     z-index: -50;
+    overflow-x: hidden; 
+}
+
+.portrait-wrapper__logo-wrapper > img  {
+    position: absolute;
+    width: clamp(600px, 50vw, 1200px);
+    margin: 80vh auto;
+}
+
+
+/* .portrait-wrapper__logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    z-index: -50;
 }
 
 .portrait-wrapper__logo-wrapper > img  {
@@ -385,7 +401,7 @@ h3 {
             to {opacity: 1; scale: 1; translate: -50px 60px}
         }
     }
-}
+} */
 
 /* Main Banner */
 
@@ -648,6 +664,10 @@ section {
 }
 
 /* Contact Section */
+.dont-show {
+    display: none;
+}
+
 .form {
     min-height: 40vh;
     margin: 0 auto;
@@ -715,8 +735,6 @@ section {
         font-size: 0.9rem;
     }
 }
-
-
 
 /* Contact Queries */
 @container form (min-width: 600px) {
