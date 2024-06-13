@@ -9,21 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    const logo = document.querySelector('.header__logo');
     const closeNavButton = document.querySelector('.close-nav-button');
-
-    // Cerrar el menú de navegación al hacer clic en el botón de cerrar
+    // Cerrar el menú de navegación al hacer click en el botón de cerrar
     closeNavButton.addEventListener('click', () => {
         checkbox.checked = false;
-    });
-
-    // Mostrar u ocultar el logo al hacer clic en el botón del menú
-    checkbox.addEventListener('click', () => {
-        if (checkbox.checked) {
-            logo.style.display = 'block';
-        } else {
-            logo.style.display = 'none';
-        }
     });
 
     // Mostrar el modal de servicios
@@ -95,7 +84,6 @@ document.addEventListener('DOMContentLoaded', function() {
             duration: 1000000,
             iterations: 1
         });
-
         animation.pause();
     });
 
@@ -104,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let viewportHeight = window.innerHeight;
         let scrollTop = document.documentElement.scrollTop;
 
-        let scrollPercentage = scrollTop / ((2 * viewportHeight) - viewportHeight); 
+        let scrollPercentage = scrollTop /  viewportHeight; 
 
         logos.forEach((logo) => {
             logo.getAnimations().forEach((animation) => {
@@ -120,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Envío de formulario con AJAX
+    // Envío de formulario de contacto con AJAX
     var form = document.getElementById("contact-form");
     async function handleSubmit(event) {
         event.preventDefault();
