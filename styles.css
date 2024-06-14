@@ -64,7 +64,7 @@ h3 {
 
 .background {
     background-image: linear-gradient(to top, rgba(255, 255, 255, 0), var(--white)), url('images/000-fondo.jpeg');
-    opacity: 0.05;
+    opacity: 0.1;
     background-size:contain;
     background-attachment: fixed; 
     top: 100dvh;
@@ -226,31 +226,34 @@ h3 {
 }
 
 .portrait-wrapper__intro-title {
-    margin: 0 auto;
+    position: relative;
     margin-bottom: 60dvh;
     padding: 15px;
     max-width: 1200px;
 }
 
-@supports (animation-timeline: view()) {
+/* @supports (animation-timeline: view()) {
     @media (prefers-reduced-motion: no-preference) {
         .portrait-wrapper__intro-title {
             animation: fade-out linear forwards;
             animation-timeline: view();
+            animation-range: 60dvh 120dvh;
         }
     }
-}
+} */
 
 .higlighted-text {
     color: var(--yellow);
 }
 
 .arrow {
+    margin: 0 auto;
+    cursor: not-allowed;
+    pointer-events: none;
     width: 60px;
 	height: 60px;
 	border: 2px solid var(--pink);
 	border-radius: 50%;
-	position: absolute;
     top: 90dvh;
 	animation: down 1.5s infinite;
 	&::before {
