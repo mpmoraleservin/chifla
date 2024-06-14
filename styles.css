@@ -19,11 +19,11 @@
 
 body {
     margin: 0 auto;
-    overflow-x: hidden;
     max-width: 100%;
     font-family: var(--font-family);
     color: var(--text-color);
     overflow-y: auto; 
+    overflow-x: hidden;
 }
 
 div, ul, li, a,h1,h2,h3,h4,p {
@@ -211,7 +211,8 @@ h3 {
     position: relative;
     z-index: 900;
     height: 200dvh;
-    width: 100%;
+    max-width: 100dvw;
+    /* overflow-x: hidden; */
 }
 
 .intro-title {
