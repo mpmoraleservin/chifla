@@ -11,10 +11,6 @@
 }
 
 /* General Styles */
-/* html {
-    overflow-x: hidden;
-    max-width: 100%;
-} */
 
 * {
     box-sizing: border-box;
@@ -297,6 +293,7 @@ h3 {
     position: absolute;
     width: clamp(600px, 50vw, 1200px);
     margin: 80vh auto;
+    overflow-x: hidden;
 }
 
 
