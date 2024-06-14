@@ -12,6 +12,10 @@
 
 /* General Styles */
 
+html {
+    overflow-x: hidden;
+}
+
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -218,16 +222,14 @@ h3 {
 .intro-title {
     font-size: clamp(1.5rem, 6dvw + 0.5rem, 3rem);
     text-align: center;
+    color: var(--aqua-green);
 }
 
 .portrait-wrapper__intro-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0 auto;
     margin-bottom: 60dvh;
     padding: 15px;
     max-width: 1200px;
-    color: var(--aqua-green);
 }
 
 @supports (animation-timeline: view()) {
@@ -244,7 +246,7 @@ h3 {
 }
 
 .arrow {
-	width: 60px;
+    width: 60px;
 	height: 60px;
 	border: 2px solid var(--pink);
 	border-radius: 50%;
