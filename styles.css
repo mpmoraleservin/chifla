@@ -248,8 +248,6 @@ h3 {
 
 .arrow {
     margin: 0 auto;
-    cursor: not-allowed;
-    pointer-events: none;
     width: 60px;
 	height: 60px;
 	border: 2px solid var(--pink);
@@ -437,7 +435,7 @@ h3 {
     text-decoration: line-through;
 }
 
-@supports (animation-timeline: view()) {
+/* @supports (animation-timeline: view()) {
     @media (prefers-reduced-motion: no-preference) {
         .main-banner {
             scale: 0.5;
@@ -450,7 +448,7 @@ h3 {
             to {scale: 1;  opacity: 1;}
         }    
     }
-}
+} */
 
 .main-banner__carrousel {
     margin: 10dvh auto;
@@ -486,7 +484,7 @@ section {
     padding: 10px;
 }
 
-.section__title {
+.section__title-h2 {
     color: var(--yellow);
     font-size: clamp(2.5rem, 10dvw + 0.5rem, 4rem);
     margin-top: 20dvh;
@@ -495,7 +493,7 @@ section {
     justify-content: center;
     text-align: center;
 }
-
+/* 
 @supports (animation-timeline: view()) {
     @media (prefers-reduced-motion: no-preference) {
         .section__title {
@@ -517,7 +515,7 @@ section {
             }
         }
     }
-}
+} */
 
 .services {
     background-color: var(--white);

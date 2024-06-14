@@ -65,11 +65,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let logos = document.querySelectorAll('.portrait-wrapper__logo-wrapper > img');
     let animationProperties = [
         {opacity: 0.5, scale: 0.3, translate: {x: 0, y: 0}},
-        {opacity: 0.5, scale: 3, translate: {x: -150, y: -80}},
-        {opacity: 0.5, scale: 5, translate: {x: -80, y: -80}},
+        {opacity: 0.3, scale: 3, translate: {x: -150, y: -80}},
+        {opacity: 0.3, scale: 5, translate: {x: -80, y: -80}},
         {opacity: 0.3, scale: 7, translate: {x: -40, y: -60}},
-        {opacity: 0.5, scale: 7, translate: {x: -50, y: -10}},
-        {opacity: 0.5, scale: 3, translate: {x: 50, y: -60}}
+        {opacity: 0.3, scale: 7, translate: {x: -50, y: -10}},
+        {opacity: 0.3, scale: 3, translate: {x: 50, y: -60}}
     ];
 
     logos.forEach((logo, index) => {
@@ -108,6 +108,56 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+
+    // Verifico si el usuario prefiere movimiento reducido
+    var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (!prefersReducedMotion) {
+        // Animacion Fade-in
+        var elements = document.querySelectorAll('.main-banner, .section__title'); 
+        // Crear un observador de intersección
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                // Si el elemento está en la vista, inicia la animación
+                if (entry.isIntersecting) {
+                    var element = entry.target;
+                    var startScale = 1; 
+                    var endScale = 0.5; 
+                    var startOpacity = 1; 
+                    var endOpacity = 0.3; 
+                    // Defino la animación
+                    var keyframes = [
+                        { transform: `scale(${startScale})`, opacity: startOpacity },
+                        { transform: `scale(${endScale})`, opacity: endOpacity }
+                    ];
+                    var options = {
+                        duration: 1000,
+                        fill: 'both' 
+                    };
+                    // Inicio la animación
+                    var animation = element.animate(keyframes, options);
+                    // Pauso la animación inicialmente
+                    animation.pause();
+                    // Ajusto la animación en función del desplazamiento
+                    var adjustAnimation = function() {
+                        var rect = element.getBoundingClientRect();
+                        var viewHeight = window.innerHeight || document.documentElement.clientHeight;
+                        var progress = (rect.top + rect.height - viewHeight) / viewHeight; // Modificado para iniciar antes
+                        // Ajustar el tiempo de la animación en función del progreso
+                        animation.currentTime = progress * options.duration;
+                    };
+                    // Ajusto la animación inicialmente
+                    adjustAnimation();
+                    // Ajusto la animación en cada desplazamiento
+                    window.addEventListener('scroll', adjustAnimation);
+                }
+            });
+        });
+        // Observo cada elemento
+        elements.forEach(function(element) {
+            observer.observe(element);
+        });
+    }
     
     // Envío de formulario de contacto con AJAX
     var form = document.getElementById("contact-form");
