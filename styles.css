@@ -11,6 +11,11 @@
 }
 
 /* General Styles */
+/* html {
+    overflow-x: hidden;
+    max-width: 100%;
+} */
+
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -18,10 +23,10 @@
 
 body {
     margin: 0 auto;
-    min-width: 100dvw;
+    overflow-x: hidden;
+    max-width: 100%;
     font-family: var(--font-family);
     color: var(--text-color);
-    overflow-x: hidden;
     overflow-y: auto; 
 }
 
