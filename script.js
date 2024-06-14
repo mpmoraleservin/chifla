@@ -60,16 +60,16 @@ document.addEventListener('DOMContentLoaded', function() {
             }, { once: true });
         });
     });
-
+    
     // Animación del portrait
     let logos = document.querySelectorAll('.portrait-wrapper__logo-wrapper > img');
     let animationProperties = [
         {opacity: 0.5, scale: 0.3, translate: {x: 0, y: 0}},
-        {opacity: 0.3, scale: 3, translate: {x: -150, y: -80}},
-        {opacity: 0.3, scale: 5, translate: {x: -80, y: -80}},
-        {opacity: 0.3, scale: 7, translate: {x: -40, y: -60}},
-        {opacity: 0.3, scale: 7, translate: {x: -50, y: -10}},
-        {opacity: 0.3, scale: 3, translate: {x: 50, y: -60}}
+        {opacity: 0.2, scale: 3, translate: {x: -150, y: -80}},
+        {opacity: 0.2, scale: 5, translate: {x: -80, y: -80}},
+        {opacity: 0.2, scale: 7, translate: {x: -40, y: -60}},
+        {opacity: 0.2, scale: 7, translate: {x: -50, y: -10}},
+        {opacity: 0.2, scale: 3, translate: {x: 50, y: -60}}
     ];
 
     logos.forEach((logo, index) => {
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (!prefersReducedMotion) {
         // Animacion Fade-in
-        var elements = document.querySelectorAll('.main-banner, .section__title'); 
+        var elements = document.querySelectorAll('.main-banner, .section__title, .form, .services'); 
         // Crear un observador de intersección
         var observer = new IntersectionObserver(function(entries) {
             entries.forEach(function(entry) {
@@ -149,7 +149,17 @@ document.addEventListener('DOMContentLoaded', function() {
                     // Ajusto la animación inicialmente
                     adjustAnimation();
                     // Ajusto la animación en cada desplazamiento
-                    window.addEventListener('scroll', adjustAnimation);
+                    var rafId = null;
+                    window.addEventListener('scroll', function() {
+                        if (rafId !== null) {
+                            // Ya hay un frame pendiente, salta este
+                            return;
+                        }
+                        rafId = requestAnimationFrame(function() {
+                            adjustAnimation();
+                            rafId = null;
+                        });
+                    });
                 }
             });
         });
@@ -158,6 +168,7 @@ document.addEventListener('DOMContentLoaded', function() {
             observer.observe(element);
         });
     }
+
     
     // Envío de formulario de contacto con AJAX
     var form = document.getElementById("contact-form");
