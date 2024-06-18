@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }, { once: true });
         });
     });
-    
+
     // Animación del portrait
     let logos = document.querySelectorAll('.portrait-wrapper__logo-wrapper > img');
     let animationProperties = [
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (!prefersReducedMotion) {
         // Animacion Fade-in
-        var elements = document.querySelectorAll('.main-banner, .section__title, .form, .services'); 
+        var elements = document.querySelectorAll('.main-banner, .section__title, .form'); 
         // Crear un observador de intersección
         var observer = new IntersectionObserver(function(entries) {
             entries.forEach(function(entry) {
