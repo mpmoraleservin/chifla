@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
     <link rel="icon" href="logo/favicon.png" type="image/x-icon">
     <meta property="og:title" content="Chiflá - Estudio de Arquitectura Infantil">
     <meta property="og:description" content="Transformamos espacios en entornos mágicos y funcionales para toda la familia. Soluciones profesionales en diseño y arquitectura infantil.">
@@ -30,19 +31,24 @@
             <button class="close-nav-button"><span class="material-symbols-outlined">Close</span></button>
             <div class="header__nav-container">
                 <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="#inicio">Inicio</a></li>
-                    <li class="header__nav-item"><a href="#services">Servicios</a></li>
-                    <li class="header__nav-item"><a href="#contact">Contacto</a></li>
+                    <li class="header__nav-item"><a class="header__nav-item-a" href="#home">Inicio</a></li>
+                    <li class="header__nav-item"><a class="header__nav-item-a" href="#services">Servicios</a></li>
+                    <li class="header__nav-item"><a class="header__nav-item-a" href="#projects">Proyectos</a></li>
+                    <li class="header__nav-item"><a class="header__nav-item-a" href="#about">Nosotros</a></li>
+                    <li class="header__nav-item"><a class="default-button" href="#contact">Contacto</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <div class="background"></div>
     <main class = "main" id="main" >
-        <div class="portrait-wrapper"  id="inicio">
+        <div class="portrait-wrapper"  id="home">
             <div class="portrait-wrapper__intro-title">
                 <h1 class="intro-title">Descubrí el primer estudio de <br><span class="higlighted-text">Arquitectura Infantil</span><br>de Argentina...</h1> 
-                <div class="arrow"></div>
+                <div id="scroll-indicator">
+                    <span class="arrow"></span>
+                    <p class="little-text">Desplázate</p>
+                </div>
             </div>
             <div class="portrait-wrapper__logo-wrapper">
                 <img class="portrait-wrapper__logo-00" src="logo/logo-00.png" alt="logo de Chiflá">
@@ -55,157 +61,206 @@
         </div>
         <div class="main-banner"  id="main-banner">
             <h2 class="main-banner__title-h2">En Chiflá, creamos espacios<br><span class="higlighted-text"> mágicos, seguros y funcionales</span><br>para toda la familia.</h2>
-            <div class="main-banner__carrousel">
-                <!-- <div class="main-banner__carrousel-img-container">
-                    <img src="images/01-parque-interior.jpeg" alt="Diseño moderno y elegante de un parque infantil interior, destacando colores pastel suaves con paredes de color melocotón, una variedad de formas geométricas lúdicas y un gran tobogán como pieza central. La sala está llena de elementos circulares y esféricos, arcos y accesorios de iluminación creativos que parecen anillos flotantes. El espacio está diseñado para ser amigable para los niños y visualmente atractivo con una estética contemporánea.">
-                </div> -->
-                <div class="main-banner__carrousel-img-container">
-                    <img src="images/02-sala-de-escalada.jpeg" alt="Sala de juegos interior diseñada para niños. La sala cuenta con una variedad de estructuras y elementos de juego, incluyendo una pared de escalada con presas de colores, un tobogán, una escalera que conduce a un nivel superior y suaves tapetes en el suelo. Las paredes están adornadas con paneles decorativos y espejos, mientras que el techo tiene un diseño intrincado de listones de madera con un corte circular en el centro. El espacio está bien iluminado, creando un ambiente cálido e invitante para el juego y la actividad. Esta imagen es interesante ya que muestra elementos modernos de diseño de interiores combinados con equipos de juego funcionales para crear un ambiente atractivo para los niños.">
-                </div>
-                <div class="main-banner__carrousel-img-container">
-                    <img src="images/03-habitacion-de-gatos.jpeg" alt="La imagen muestra una habitación interior para gatos moderna y elegante diseñada con un tema circular cohesivo. La habitación cuenta con varias piezas de mobiliario de forma redonda, incluyendo una cama, sofás y estanterías. La paleta de colores es cálida y neutral, con iluminación que acentúa los diseños circulares. Esta imagen es interesante debido a su concepto de diseño único que se centra en curvas y círculos, creando un espacio armonioso y visualmente atractivo.">
-                </div>
-                <div class="main-banner__carrousel-img-container">
-                    <img src="images/04-sala-de-juegos.jpeg"alt="La imagen muestra un espacio interior diseñado como sala de juegos o área de aprendizaje para niños. Cuenta con un diseño moderno y limpio con acentos de madera, colores suaves y abundante luz natural. La sala incluye varias áreas de juego con juguetes, libros y materiales educativos. Una lámpara circular cuelga del techo, que se complementa con elementos arquitectónicos curvos y muebles que crean un ambiente cohesivo e invitante. El espacio es interesante por su combinación de funcionalidad, consideraciones de seguridad para los niños y diseño estéticamente agradable que fomenta el aprendizaje y el juego en un ambiente cómodo.">
-                </div>
-                <div class="main-banner__carrousel-img-container">
-                    <img src="images/05-habitacion-de-perros.jpeg" alt="La imagen muestra una habitación moderna y elegante para perros. La habitación cuenta con una lámpara circular central en el techo, que proporciona un ambiente cálido. A lo largo de las paredes hay listones de madera verticales, y hay varios sofás con cojines de colores neutros dispuestos alrededor del perímetro de la habitación. En el centro, hay una gran área acolchada redonda con varias camas para perros y cuencos llenos de comida para perros. Además, hay una estructura similar a un árbol para gatos para perros con agujeros para que puedan subir y descansar. En la parte superior de esta estructura y en algunos estantes alrededor de la habitación, se colocan varios juguetes para perros. El diseño general es limpio, minimalista y parece estar adaptado para la comodidad de los perros.">
-                </div>
-                <div class="main-banner__carrousel-img-container">
-                    <img src="images/06-cumpleanos-tematico-nubes.jpeg" alt="Elegante decoración de mesa para evento con temática de cielo, incluyendo un mantel gris con estrellas y nubes, centros de mesa con flores secas y esferas colgantes en tonos neutros. El diseño crea una atmósfera serena y estilizada, ideal para celebraciones sofisticadas.">
-                </div>
-                <div class="main-banner__carrousel-img-container">
-                    <img src="images/07-habitacion-tematica-ciencias.jpeg" alt="Habitación infantil moderna con temática espacial, que incluye una litera con diseño de estrellas y planetas, un área de estudio con computadora y libros, una alfombra de patrón geométrico colorido en el suelo y sillas de bolsa de frijoles juguetonas. La habitación está bien iluminada con luz natural de la ventana y luces LED en el techo.">
-                </div>
-                <div class="main-banner__carrousel-img-container">
-                    <img src="images/08-habitacion-tematica-jungla.jpeg" alt="Diseño interior moderno de habitación infantil con temática de jungla tropical, que incluye un gran mural de pared de palmeras y aves exóticas. La habitación incluye una estructura de cama única estilo casa en el árbol con una escalera, un rincón de lectura acogedor con cojines blancos bajo un dosel drapeado, y una alfombra de juego con siluetas de animales. Una elegante lámpara colgante cuelga del techo, complementando los muebles blancos limpios de la habitación y los vibrantes acentos verdes.">
-                </div>
-                <div class="main-banner__carrousel-img-container">
-                    <img src="images/09-habitacion-rustica-bebe.jpeg" alt="Acogedora habitación infantil con cuna de madera, decorada en tonos neutros y suaves. La habitación cuenta con un techo de vigas de madera a la vista, una gran ventana que deja entrar luz natural, y está amueblada con una mecedora, un cambiador de bebé y juguetes suaves en el suelo. La atmósfera es cálida y tranquila, ideal para el descanso del bebé.">
-                </div>
-                <div class="main-banner__carrousel-img-container">
-                    <img src="images/10-habitacion-bebe-tema-cielo.jpeg" alt="Habitación de bebé moderna con una paleta de colores neutros que incluye una cuna, una mesa para cambiar pañales, un sillón y elementos decorativos de nubes y estrellas con iluminación suave.">
-                </div>
-            </div>
+            <a id="knowMore" class="default-button" href="#services">Conocé Más</a>
         </div>
     </main>
-    <!-- Secciones de la página -->
     <!-- Sección "Servicios" -->
     <section class="services-section" id="services">
         <div class="section__title">
-            <h2 class="section__title-h2">Nuestros Servicios</h2>
+            <h2 class="section__title-h2">Servicios</h2>
+            <p>
+                Nos dedicamos a diseñar y crear espacios y productos que fomenten <span class="higlighted-text">el desarrollo, la independencia y la creatividad</span> de los niños.
+            </p>
+        </div>
+        <div class="services">
+            <div class="services__service">
+                <img class="services__image" src="images/11-sala-de-juegos.jpeg" alt="Diseño arquitectónico infantil moderno y lúdico. Destaca una estructura cilíndrica central con escalones integrados que conducen a un nivel superior. La estructura está acentuada con una iluminación cálida e incluye un recorte circular con un columpio acogedor en su interior. Alrededor del área, hay juguetes y muebles de madera de tonos suaves, complementados con cortinas claras, creando un espacio de juego acogedor e imaginativo.">
+                <div class="services__service-description">
+                    <h2 class="h2-cursive">Arquitectura</h2>
+                    <ul>
+                        <li><h3>Intervención en<br> la Vivienda</h3><br> Espacios adaptados a las necesidades de las familias, para niños y mascotas.</li>
+                        <li><h3>Espacios<br> Educativos</h3><br>Creamos espacios que promueven el desarrollo y la creatividad.</li>
+                        <li><h3>Áreas<br> Recreativas</h3><br>Diseños que fomentan el juego seguro y la convivencia familiar.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="services__service">
+                <div class="services__service-description">
+                    <h2 class="h2-cursive">Interiores</h2>
+                    <ul>
+                        <li><h3>Habitaciones<br> Infantiles</h3><br>Diseñamos dormitorios que estimulan la imaginación y el descanso.</li>
+                        <li><h3>Espacios<br> Multisensoriales</h3><br>Creamos espacios que promueven el desarrollo sensorial y cognitivo.</li>
+                        <li><h3>Adaptaciones<br> Funcionales</h3><br> Inclusión de sistemas de domótica, monitoreo y climatización.</li>
+                    </ul>
+                </div>
+                <img class="services__image" src="images/12-maqueta-de-interiores.jpeg" alt="Imagen de una maqueta tridimensional de diseño de interiores en tonos pasteles, con un estilo minimalista y moderno. El espacio está bien organizado y presenta una sala de estar con un sofá blanco adornado con una manta rosa y una almohada, junto a una estantería llena de libros y objetos decorativos. Hay obras de arte geométricas en la pared, y el área se divide por puertas corredizas que llevan a otro espacio con mesa y sillas. El suelo es de madera clara, complementando la paleta de colores suaves. En primer plano hay plantas verdes que añaden un toque natural al ambiente, así como un osito de peluche blanco sentado en el suelo, lo que sugiere que el espacio también está pensado para ser acogedor para los niños.">
+            </div>
+            <div class="services__service">
+                <img class="services__image" src="images/13-cumpleanos-tema-burbujas.jpeg" alt="Imagen de una ambientación de eventos con un diseño moderno y estético. Se observa una sala decorada con globos en tonos pastel de azul, naranja y blanco, suspendidos en el aire y adheridos a la pared en un patrón aleatorio. En el centro hay una mesa redonda con sillas a juego en colores pastel, sobre la cual se encuentra una vajilla elegante y arreglos florales discretos. Al fondo, se aprecia otra mesa más grande decorada con pasteles, dulces y cajas de regalo que siguen la paleta de colores del evento. El espacio es luminoso y acogedor, ideal para celebraciones íntimas o eventos sofisticados.">
+                <div class="services__service-description">
+                    <h2 class="h2-cursive">Ambientación</h2>
+                    <ul>
+                        <li><h3>Eventos<br> Temáticos</h3><br>Decoración personalizada que convierte tu evento en una experiencia inolvidable.</li>
+                        <li><h3>Eventos<br> Educativos</h3><br>Intervenciones que aportan un entorno que favorece al aprendizaje y la curiosidad.</li>
+                        <li><h3>Celebraciones<br> Familiares</h3><br>Diseños que integran a niños y mascotas, creando un entorno inclusivo y festivo.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="services__service">
+                <div class="services__service-description">
+                    <h2 class="h2-cursive">Mobiliario</h2>
+                    <ul>
+                        <li><h3>Muebles<br> Multifuncionales</h3><br>Optimizan el espacio y se adaptan a las necesidades cambiantes de los niños.</li>
+                        <li><h3>Diseños<br> Ergonómicos</h3><br>Mobiliario que promueve la postura correcta y el confort del niño.</li>
+                        <li><h3>Diseños<br> Personalizados</h3><br>Personalizamos tu diseño para que cada pieza se integre perfectamente en el entorno.</li>
+                    </ul>
+                </div>
+                <img class="services__image" src="images/14-mobiliario-de-diseno.jpeg" alt="Imagen de un moderno diseño de mobiliario infantil multifuncional con cama elevada, escritorio integrado y almacenamiento modular. La estructura presenta una paleta de colores pastel con tonos rosa, azul, amarillo y blanco. Incluye estantes abiertos y cerrados para libros y juguetes, cajones de diferentes tamaños y un espacio de trabajo con silla a juego. El diseño optimiza el espacio y fomenta la organización en habitaciones infantiles.">
+            </div>
+            <div class="services__service">
+                <img class="services__image" src="images/15-juguetes-de-diseno.jpeg" alt="Imagen de una colección de juguetes de diseño en una habitación infantil bien iluminada. Incluye osos de peluche, bloques de construcción de madera en tonos naturales y pastel, figuras geométricas suaves y un canasto con muñecos animales. El conjunto está dispuesto sobre un suelo de madera con estanterías y más juguetes al fondo, creando un ambiente acogedor y estimulante para el juego creativo.">
+                <div class="services__service-description">
+                    <h2 class="h2-cursive">Juguetes y Accesorios</h2>
+                    <ul>
+                        <li><h3>Juguetes<br> Educativos e Interactivos</h3><br>Productos que fomentan el aprendizaje y el desarrollo cognitivo a través del juego.</li>
+                        <li><h3>Accesorios<br> para niños y mascotas</h3><br>Productos de diseño que añaden color, estimulan los sentidos y contribuyen al bienestar.</li>
+                        <li><h3>Seguridad<br> y<br> Calidad</h3><br>Fabricación con materiales seguros y duraderos, cumpliendo con los más altos estándares de calidad.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="arrow-button">
+                <a id="knowMore" class="default-button" href="#projects">Mirá algunos ejemplos</a>
+                <span class="arrow"></span>
+            </div>
+        </div>
+    </section>
+    <!-- Sección "Proyectos" -->
+    <section class="projects-section" id="projects">
+        <div class="section__title">
+            <h2 class="section__title-h2">Proyectos</h2>
             <p>
                 Ya sea que busques crear un dormitorio infantil temático, un espacio de juego o muebles y juguetes únicos.
                 <br><br>
                 <span class="higlighted-text">En Chiflá, la imaginación no tiene límites.</span>
             </p>
         </div>
-        <div class="services">
-            <div class="services__service-container">
-                <div class="services__service">
-                    <h2 class="services__service-name">Arquitectura</h2>
-                    <div class="services__modal-image-container">
-                        <img class="services__modal-image" src="images/11-sala-de-juegos.jpeg" alt="Diseño arquitectónico infantil moderno y lúdico. Destaca una estructura cilíndrica central con escalones integrados que conducen a un nivel superior. La estructura está acentuada con una iluminación cálida e incluye un recorte circular con un columpio acogedor en su interior. Alrededor del área, hay juguetes y muebles de madera de tonos suaves, complementados con cortinas claras, creando un espacio de juego acogedor e imaginativo.">
+        <div class="projects">
+            <div class="projects__project-container">
+                <div class="projects__project">
+                    <h2 class="projects__project-name" id="clickable-heading">La Selva</h2>
+                    <div class="projects__modal-image-container">
+                        <img class="projects__modal-image" src="images/08-habitacion-tematica-jungla.jpeg" alt="Diseño interior moderno de habitación infantil con temática de jungla tropical, que incluye un gran mural de pared de palmeras y aves exóticas. La habitación incluye una estructura de cama única estilo casa en el árbol con una escalera, un rincón de lectura acogedor con cojines blancos bajo un dosel drapeado, y una alfombra de juego con siluetas de animales. Una elegante lámpara colgante cuelga del techo, complementando los muebles blancos limpios de la habitación y los vibrantes acentos verdes.">
                         <div class="modal__close-button">
                             <button id="closeModalButton" class="close-modal-button"><span class="material-symbols-outlined">Close</span></button>
                         </div>
-                        <div class="services__modal-description">
-                            <h2>Arquitectura</h2>
-                            Nuestro equipo de arquitectos y diseñadores está dedicado a la creación de espacios innovadores y funcionales. Nos enfocamos en:
+                        <div class="projects__modal-description">
+                            <h2 class="h2-cursive">La Selva</h2>
+                            <strong>Habitación temática infantil: Selva Tropical.</strong>
                             <ul>
-                                <li><h3>Intervención en la Vivienda</h3> Diseño y construcción de espacios adaptados a las necesidades de las familias, para niños y mascotas.</li>
-                                <li><h3>Espacios Educativos</h3> Creación de escuelas, guarderías y centros de aprendizaje que promuevan el desarrollo y la creatividad infantil.</li>
-                                <li><h3>Áreas Recreativas</h3> Diseño de parques y zonas de esparcimiento que fomenten el juego seguro y la convivencia familiar.</li>
+                                <li><strong>Paredes: </strong>Murales de animales (tigres, monos, loros) y plantas tropicales.</li>
+                                <li><strong>Mobiliario:</strong> Cama temática, escritorio y muebles de guardado. </li>
+                                <li><strong>Iluminación:</strong> Luces cálidas acompañando la paleta de colores.</li>
+                                <li><strong>Suelo:</strong> Suelo de madera con alfombrado acolchado.</li>
+                                <li><strong>Accesorios:</strong> Casa de juegos temática.</li>
+                                <li><strong>Tecnología:</strong> Sistema de monitoreo integrado en las cámaras ocultas dentro de las decoraciones, control domótico de luces y temperatura.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="services__service">
-                    <h2 class="services__service-name">Interiores</h2>
-                    <div class="services__modal-image-container">
-                        <img class="services__modal-image" src="images/12-maqueta-de-interiores.jpeg" alt="Imagen de una maqueta tridimensional de diseño de interiores en tonos pasteles, con un estilo minimalista y moderno. El espacio está bien organizado y presenta una sala de estar con un sofá blanco adornado con una manta rosa y una almohada, junto a una estantería llena de libros y objetos decorativos. Hay obras de arte geométricas en la pared, y el área se divide por puertas corredizas que llevan a otro espacio con mesa y sillas. El suelo es de madera clara, complementando la paleta de colores suaves. En primer plano hay plantas verdes que añaden un toque natural al ambiente, así como un osito de peluche blanco sentado en el suelo, lo que sugiere que el espacio también está pensado para ser acogedor para los niños.">
+                <div class="projects__project">
+                    <h2 class="projects__project-name" id="clickable-heading">Entre Nubes</h2>
+                    <div class="projects__modal-image-container">
+                        <img class="projects__modal-image" src="images/06-cumpleanos-tematico-nubes.jpeg" alt="Elegante decoración de mesa para evento con temática de cielo, incluyendo un mantel gris con estrellas y nubes, centros de mesa con flores secas y esferas colgantes en tonos neutros. El diseño crea una atmósfera serena y estilizada, ideal para celebraciones sofisticadas.">
                         <div class="modal__close-button">
                             <button id="closeModalButton" class="close-modal-button"><span class="material-symbols-outlined">Close</span></button>
                         </div>
-                        <div class="services__modal-description">
-                            <h2>Interiores</h2>
-                            Transformamos los interiores para que cada espacio refleje la personalidad y necesidades de sus habitantes. Nuestros servicios incluyen:
-                            <ul>
-                                <li><h3>Habitaciones Infantiles</h3> Diseño y personalización de dormitorios que estimulen la imaginación y el descanso.</li>
-                                <li><h3>Espacios Multisensoriales</h3> Creación de ambientes que promuevan el desarrollo sensorial y cognitivo a través de la iluminación, el sonido y la textura.</li>
-                                <li><h3>Adaptaciones Funcionales</h3> Optimización de espacios para incluir sistemas de domótica, monitoreo y control ambiental, asegurando confort y seguridad.</li>
+                        <div class="projects__modal-description">
+                            <h2 class="h2-cursive">Entre Nubes</h2>
+                            <strong>Ambientación temática para eventos: Cielo y Nubes.</strong> 
+                            <ul> 
+                                <li><strong>Decoración:</strong> Mantelería decorada con estrellas y nubes. Centros de mesa con elementos naturales y paleta de colores neutros.</li>
+                                <li><strong>Iluminación:</strong> Luces suaves que complementan la ambientación.</li>
+                                <li><strong>Accesorios:</strong> Decoraciones colgantes que imitan planetas y estrellas, complementando la temática celestial.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="services__service">
-                    <h2 class="services__service-name">Ambientación</h2>
-                    <div class="services__modal-image-container">
-                        <img class="services__modal-image" src="images/13-cumpleanos-tema-burbujas.jpeg" alt="Imagen de una ambientación de eventos con un diseño moderno y estético. Se observa una sala decorada con globos en tonos pastel de azul, naranja y blanco, suspendidos en el aire y adheridos a la pared en un patrón aleatorio. En el centro hay una mesa redonda con sillas a juego en colores pastel, sobre la cual se encuentra una vajilla elegante y arreglos florales discretos. Al fondo, se aprecia otra mesa más grande decorada con pasteles, dulces y cajas de regalo que siguen la paleta de colores del evento. El espacio es luminoso y acogedor, ideal para celebraciones íntimas o eventos sofisticados.">
+                <div class="projects__project">
+                    <h2 class="projects__project-name" id="clickable-heading">Ciencia Cierta</h2>
+                    <div class="projects__modal-image-container">
+                        <img class="projects__modal-image" src="images/07-habitacion-tematica-ciencias.jpeg" alt="Habitación infantil moderna con temática espacial, que incluye una litera con diseño de estrellas y planetas, un área de estudio con computadora y libros, una alfombra de patrón geométrico colorido en el suelo y sillas de bolsa de frijoles juguetonas. La habitación está bien iluminada con luz natural de la ventana y luces LED en el techo.">
                         <div class="modal__close-button">
                             <button id="closeModalButton" class="close-modal-button"><span class="material-symbols-outlined">Close</span></button>
                         </div>
-                        <div class="services__modal-description">
-                            <h2>Ambientación</h2>
-                            Creamos ambientes únicos y personalizados para eventos y ocasiones especiales, incluyendo:
+                        <div class="projects__modal-description">
+                            <h2 class="h2-cursive">Ciencia Cierta</h2>
+                            <strong>Habitación temática infantil: Espacio Exterior.</strong>
                             <ul>
-                                <li><h3>Eventos Temáticos</h3> Decoración y puesta en escena que convierten cualquier evento en una experiencia inolvidable.</li>
-                                <li><h3>Eventos Educativos</h3> Diseño de espacios interactivos y educativos que fomenten el aprendizaje y la curiosidad.</li>
-                                <li><h3>Celebraciones Familiares</h3> Ambientación de eventos familiares que integran a niños y mascotas, creando un entorno inclusivo y festivo.</li>
+                                <li><strong>Mobiliario:</strong> Cama alta tipo litera con escalera, escritorio amplio, estanterías y almacenamiento integrado.</li>
+                                <li><strong>Iluminación:</strong> Luces empotradas en el techo y tiras de LED que resaltan los contornos del techo y la cama.</li>
+                                <li><strong>Suelo:</strong> Suelo de madera con una gran alfombra multicolor de patrón geométrico.</li>
+                                <li><strong>Accesorios:</strong> Almohadones decorativos con forma de planetas, telescopio para niños y juguetes educativos.</li>
+                                <li><strong>Tecnología:</strong> Pantallas planas en la pared que muestran imágenes del espacio exterior y sistema de sonido integrado, control domótico de luces y temperatura.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="services__service">
-                    <h2 class="services__service-name">Mobiliario</h2>
-                    <div class="services__modal-image-container">
-                        <img class="services__modal-image" src="images/14-mobiliario-de-diseno.jpeg" alt="Imagen de un moderno diseño de mobiliario infantil multifuncional con cama elevada, escritorio integrado y almacenamiento modular. La estructura presenta una paleta de colores pastel con tonos rosa, azul, amarillo y blanco. Incluye estantes abiertos y cerrados para libros y juguetes, cajones de diferentes tamaños y un espacio de trabajo con silla a juego. El diseño optimiza el espacio y fomenta la organización en habitaciones infantiles.">
+                <div class="projects__project">
+                    <h2 class="projects__project-name" id="clickable-heading">Patitas Viajeras</h2>
+                    <div class="projects__modal-image-container">
+                        <img class="projects__modal-image" src="images/14-pet-area.jpeg" alt="Espacio acogedor y relajante en un aeropuerto donde los viajeros puedan llevar a sus compañeros peludos mientras esperan su vuelo.">
                         <div class="modal__close-button">
                             <button id="closeModalButton" class="close-modal-button"><span class="material-symbols-outlined">Close</span></button>
                         </div>
-                        <div class="services__modal-description">
-                            <h2>Mobiliario</h2>
-                            Diseñamos y fabricamos mobiliario infantil y para mascotas que combina funcionalidad y estética. Ofrecemos:
+                        <div class="projects__modal-description">
+                            <h2 class="h2-cursive">Patitas Viajeras</h2>
+                            <strong>Zona de descanso para mascotas.</strong>
                             <ul>
-                                <li><h3>Muebles Multifuncionales</h3> Soluciones que ahorran espacio y se adaptan a las necesidades cambiantes de los niños.</li>
-                                <li><h3>Diseños Ergonómicos</h3> Mobiliario que promueve la postura correcta y el confort tanto para niños como para mascotas.</li>
-                                <li><h3>Personalización</h3> Opciones de personalización para que cada pieza se integre perfectamente en el entorno del hogar.</li>
+                                <li><strong>Tema:</strong> Confort y Relajación.</li>
+                                <li><strong>Elementos:</strong> Área de descanso elevada, colores neutros y cálidos para un ambiente tranquilo.</li>
+                                <li><strong>Iluminación:</strong> Iluminación suave y regulable e iluminación natural.</li>
+                                <li><strong>Suelo:</strong> Alfombras cómodas y lavables, suelo antideslizante.</li>
+                                <li><strong>Tecnología:</strong> Sistema de monitoreo y cámaras, ambientador automático con fragancias relajantes.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="services__service">
-                    <h2 class="services__service-name">Juguetes</h2>
-                    <div class="services__modal-image-container">
-                        <img class="services__modal-image" src="images/15-juguetes-de-diseno.jpeg" alt="Imagen de una colección de juguetes de diseño en una habitación infantil bien iluminada. Incluye osos de peluche, bloques de construcción de madera en tonos naturales y pastel, figuras geométricas suaves y un canasto con muñecos animales. El conjunto está dispuesto sobre un suelo de madera con estanterías y más juguetes al fondo, creando un ambiente acogedor y estimulante para el juego creativo.">
+                <div class="projects__project">
+                    <h2 class="projects__project-name" id="clickable-heading">Vino a Jugar</h2>
+                    <div class="projects__modal-image-container">
+                        <img class="projects__modal-image" src="images/16-restaurant-playroom.jpeg" alt="Espacio lúdico inmerso en un elegante restaurant de bodega. Elementos acolchonados de colores neutros y acordes al sofisticado ambiente del Restaurant.">
                         <div class="modal__close-button">
                             <button id="closeModalButton" class="close-modal-button"><span class="material-symbols-outlined">Close</span></button>
                         </div>
-                        <div class="services__modal-description">
-                            <h2>Juguetes</h2>
-                            Nuestros juguetes están diseñados para estimular el desarrollo y la diversión. Proporcionamos:
+                        <div class="projects__modal-description">
+                            <h2 class="h2-cursive">Vino a Jugar</h2>
+                            <strong>Zona de juegos en restaurant de vinos</strong>
                             <ul>
-                                <li><h3>Juguetes Educativos</h3> Productos que fomentan el aprendizaje y el desarrollo cognitivo a través del juego.</li>
-                                <li><h3>Juguetes Interactivos</h3> Opciones que promueven la interacción entre niños y mascotas, fortaleciendo su vínculo.</li>
-                                <li><h3>Seguridad y Calidad</h3> Fabricación con materiales seguros y duraderos, cumpliendo con los más altos estándares de calidad.</li>
+                                <li><strong>Tema:</strong> Minimalista y Elegante</li>
+                                <li><strong>Elementos:</strong> Área de juego acolchada, colores neutros y cálidos para un ambiente tranquilo.</li>
+                                <li><strong>Iluminación:</strong> Iluminación suave y regulable e iluminación natural.</li>
+                                <li><strong>Suelo:</strong> Alfombras cómodas y lavables, suelo acolchado antideslizante.</li>
+                                <li><strong>Tecnología:</strong> Sistema de monitoreo y cámaras, ambientador automático con fragancias relajantes.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="services__service">
-                    <h2 class="services__service-name">Accesorios</h2>
-                    <div class="services__modal-image-container">
-                        <img class="services__modal-image" src="images/16-accesorios-de-diseno.jpeg" alt="Imagen de una habitación infantil decorada con accesorios de diseño. En primer plano, hay varios cojines de diferentes formas y colores, incluyendo uno en forma de estrella y otro en forma de nube. Hay pelotas pequeñas esparcidas por el suelo y un cojín más grande que parece ser un asiento. A la derecha, se encuentra una caja de madera con rejilla que tiene encima juguetes y una lámpara. Detrás, hay una pared decorada con franjas verticales en tonos pasteles y sobre ella, adornos colgantes que parecen nubes y gotas de lluvia. En el centro, se aprecia un cabecero de cama con la ilustración de un arcoíris entre dos nubes.">
+                <div class="projects__project">
+                    <h2 class="projects__project-name" id="clickable-heading">Casita de Afuera</h2>
+                    <div class="projects__modal-image-container">
+                        <img class="projects__modal-image" src="images/17-casa-de-jardin.jpeg" alt="Casita de exterior para niños con un diseño moderno y minimalista. La estructura cúbica tiene un techo plano y está construida con listones verticales de madera pintados en gris claro. La casita tiene una entrada principal sin puerta con una rampa de madera y barandillas, una ventana abierta sin vidrio en un costado y un estante visible en el interior. ">
                         <div class="modal__close-button">
                             <button id="closeModalButton" class="close-modal-button"><span class="material-symbols-outlined">Close</span></button>
                         </div>
-                        <div class="services__modal-description">
-                            <h2>Accesorios</h2>
-                            Ofrecemos una variedad de accesorios que complementan y enriquecen los espacios diseñados. Estos incluyen:
+                        <div class="projects__modal-description">
+                            <h2 class="h2-cursive">Casita de Afuera</h2>
+                            <strong>Casita de juguetes de exterior.</strong>
                             <ul>
-                                <li><h3>Textiles y Decoración</h3> Almohadones, alfombras y cortinas que añaden color y textura a las habitaciones.</li>
-                                <li><h3>Elementos Sensoriales</h3> Productos que estimulan los sentidos y contribuyen al bienestar, como luces LED y difusores de aroma.</li>
-                                <li><h3>Accesorios para Mascotas</h3> Camas, rascadores y juguetes diseñados específicamente para las mascotas, integrándose armoniosamente en los espacios familiares.</li>
+                                <li><strong>Tema:</strong> Moderno y minimalista.</li>
+                                <li><strong>Estructura:</strong> Cúbica con techo plano, listones verticales de madera pintados en gris claro.</li>
+                                <li><strong>Aberturas:</strong> Entrada principal sin puerta con rampa de madera y barandillas, ventana abierta sin vidrio.</li>
+                                <li><strong>Texturas:</strong> Madera lisa y pintada en paredes exteriores, grano natural en rampa y barandillas.</li>
+                                <li><strong>Interior:</strong> Estante visible a través de la entrada, muebles de madera.</li>
                             </ul>
                         </div>
                     </div>
@@ -213,14 +268,65 @@
             </div>  
         </div>
     </section>
+    <!-- Seccion "Nosotros" -->
+    <section class="about-section" id="about">
+        <div class="section__title">
+            <h2 class="section__title-h2">Nosotros</h2>
+            <p> 
+                Chiflá nació en 2024 de la pasión por <span class="higlighted-text">  crear espacios que fomenten el desarrollo y la creatividad</span> de los niños integrando
+                las necesidades de toda la familia,<span class="higlighted-text">  incluyendo a las mascotas.</span>
+            </p>
+        </div>
+        <div class="about">
+            <div class="about__content">
+                <img class="about__image" src="images/19-casita-de-juguete.jpeg" alt=" ">
+                <div class="about__content-description">
+                    <h2 class="h2-cursive">Misión</h2>
+                    <ul>
+                        <li>Nuestra misión es transformar cualquier entorno en un lugar mágico y adaptado a cada etapa de la vida familiar, promoviendo el bienestar, la seguridad y la diversión a través de un diseño innovador y funcional.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="about__content">
+                <div class="about__content-description">
+                    <h2 class="h2-cursive">Valores</h2>
+                    <ul>
+                        <li><h3>Innovación</h3><br> Buscamos constantemente nuevas ideas para crear espacios únicos.</li>
+                        <li><h3>Calidad</h3><br> Ofrecemos productos y servicios de la más alta calidad, utilizando materiales seguros y duraderos.</li>
+                        <li><h3>Inclusión</h3><br> Creemos en crear espacios que sean accesibles,seguros y acogedores para todos.</li>
+                    </ul>
+                </div>
+                <img class="about__image" src="images/03-habitacion-de-gatos.jpeg" alt=" ">
+            </div>
+        </div>
+        <div class="about">
+            <div class="about__content">
+                <img class="about__image" src="images/18-interiores-design.jpeg" alt=" ">
+                <div class="about__content-description">
+                    <h2 class="h2-cursive">Metodología</h2>
+                    <ul>
+                        <li><h3>Investigación y<br> Conceptualización</h3><br> Comenzamos con una investigación profunda para entender las necesidades específicas de cada cliente y proyecto.</li>
+                        <li><h3>Diseño y<br> Desarrollo</h3><br> Creamos diseños personalizados que integran funcionalidad, estética y seguridad.</li>
+                        <li><h3>Implementación <br>y Evaluación</h3><br> Nos encargamos de cada detalle de la implementación y evaluamos continuamente para asegurar la satisfacción del cliente.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="arrow-button">
+            <a id="knowMore" class="default-button" href="#contact">Contactanos para empezar hoy</a>
+            <span class="arrow"></span>
+        </div>
+    </section>
     <!-- Sección "Contacto" -->
     <section class="contact-section" id="contact">
         <div class="section__title">
             <h2 class="section__title-h2">Contacto</h2>
             <p>
-                Estamos aquí para resolver tus ideas.
+                Estamos aquí para llevar a cabo tus ideas y resolver tus dudas.
                 <br><br>
-                <span class="higlighted-text">Cualquier cosa vos... Chiflá!</span>
+                <span class="higlighted-text">Cualquier cosa vos... ¡Chiflá!</span>
             </p> 
         </div>
         <div class="form">
@@ -278,11 +384,18 @@
             </div>
             <div class="footer__section footer__links">
                 <h3>Enlaces</h3>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
+                <div class="footer__section-footer__links-row">
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#about">Nosotros</a></li>
+                        <!-- <li><a href="#blog">Blog</a></li> -->
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>  
+                </div>
             </div>
         </div>
         <div class="footer__bottom">

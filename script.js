@@ -17,11 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Mostrar el modal de servicios
-    const serviceContainers = document.querySelectorAll('.services__service-container .services__service');
-    const modalContainers = document.querySelectorAll('.services__modal-image-container');
+    const projectContainers = document.querySelectorAll('.projects__project-container .projects__project');
+    const modalContainers = document.querySelectorAll('.projects__modal-image-container');
     
-    serviceContainers.forEach((service, index) => {
-        service.addEventListener('click', (event) => {
+    projectContainers.forEach((project, index) => {
+        project.addEventListener('click', (event) => {
             event.stopPropagation();
             const modal = modalContainers[index];
             modal.classList.add('show');
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     document.addEventListener('click', (event) => {
         const clickedElement = event.target;
-        if (!clickedElement.closest('.services__modal-image-container') && !clickedElement.closest('.services__service')) {
+        if (!clickedElement.closest('.projects__modal-image-container') && !clickedElement.closest('.projects__project')) {
             modalContainers.forEach((modal) => {
                 modal.classList.remove('visible');
                 modal.addEventListener('transitionend', () => {
