@@ -812,7 +812,7 @@ section {
     border-radius: 15px;
     justify-content: center;
     flex-direction: column;
-    width: 80dvw;
+    max-width: 90dvw;
     margin:15px;
     background-color: var(--white);
     padding: 15px;
