@@ -570,7 +570,7 @@ section {
     margin: 0 auto;
     flex-direction: column;
     max-width: 1200px;
-    gap: 10dvw;
+    gap: 5dvw;
     container-name: services;
     container-type: inline-size;
 }
@@ -578,21 +578,20 @@ section {
 .services__service {
     display: flex;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 10px;
     justify-content: center;
     flex-direction: column;
-    /* width: 80dvw; */
+    max-width: 90dvw;
     margin:15px;
     background-color: var(--white);
     padding: 15px;
-    border-radius: 10px;
     box-shadow: var(--box-shadow);
 }
 
 .services__service-description {
     text-align: center;
     padding: 0 5dvw;
-    padding: 30px;
+    padding: 15px;
 }
 
 .services__image {
