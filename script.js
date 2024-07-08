@@ -1,5 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
-    
+    // SEO -  Schema.org structured data
+    var schemaScript = document.createElement('script');
+    schemaScript.type = "application/ld+json";
+    schemaScript.text = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Chiflá - Estudio de Arquitectura Infantil",
+        "url": "https://chifla.com.ar",
+        "logo": "https://chifla.com.ar/logo.png",
+        "sameAs": [
+            "https://www.instagram.com/chifla.studio",
+            "https://www.facebook.com/profile.php?id=61561164944694"
+        ],
+        "description": "Chiflá ofrece arquitectura infantil, incluyendo diseño de interiores, mobiliario, accesorios y juguetes personalizados."
+    });
+    document.head.appendChild(schemaScript);
+
     // Esconder el menú responsive cuando se hace click
     const navLinks = document.querySelectorAll('.header__nav-item a');
     const checkbox = document.querySelector('.header__checkbox');
