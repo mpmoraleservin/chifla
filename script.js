@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "@type": "Organization",
         "name": "Chiflá - Estudio de Arquitectura Infantil",
         "url": "https://chifla.com.ar",
-        "logo": "https://chifla.com.ar/logo.png",
+        "logo": "https://chifla.com.ar/images/00-logo.png",
         "sameAs": [
             "https://www.instagram.com/chifla.studio",
             "https://www.facebook.com/profile.php?id=61561164944694"
