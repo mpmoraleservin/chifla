@@ -787,6 +787,9 @@ section {
     .projects__project:nth-child(6) {
         grid-column: span 2;
     }
+    .projects__project-container {
+        position: relative;
+    }
     .projects__modal-image-container {
         display: flex;
         flex-direction: row;
